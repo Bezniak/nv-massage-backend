@@ -2,7 +2,7 @@ module.exports = ({ env }) => ({
   host: env('HOST', '0.0.0.0'),
   port: env.int('PORT', 1337),
   app: {
-    keys: env.array('APP_KEYS'),
+    keys: env.array('APP_KEYS', ['4upykKt3xaa3V9mWZWaHMA==', '6g+cVwZCKBGeBJU6JAbnUw==', 'M1LeORooSCco+rXj8nBMWA==', 'bgis3pfN5XHWB5Mr+rsNhg==']),
   },
   webhooks: {
     populateRelations: env.bool('WEBHOOKS_POPULATE_RELATIONS', false),
