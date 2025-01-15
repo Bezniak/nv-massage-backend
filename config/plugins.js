@@ -11,10 +11,14 @@
 // });
 
 
-module.exports = ({ env }) => ({
+module.exports = ({env}) => ({
     "users-permissions": {
         config: {
+            register: {
+                allowedFields: ["userphone"],
+            },
             jwtSecret: env('JWT_SECRET'),
         },
     },
 });
+
