@@ -14,4 +14,8 @@ module.exports = ({ env }) => ({
     nps: env.bool('FLAG_NPS', true),
     promoteEE: env.bool('FLAG_PROMOTE_EE', true),
   },
+  server: {
+    host: env('HOST', '0.0.0.0'),  // Используйте этот хост
+    port: env.int('PORT', 1337),   // Порт, который вы используете
+  },
 });
